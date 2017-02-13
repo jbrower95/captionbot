@@ -1,5 +1,4 @@
-It's a twitter bot that posts random photos with captions from Pornhub.
-
+It's a twitter bot that posts random photos with captions.
 
 1: Setup a recurring cron job to call 
 
@@ -9,8 +8,7 @@ It's a twitter bot that posts random photos with captions from Pornhub.
 
 2: Make sure to put your twitter account in the code. I've made it throw an error so you remember.
 
-3: The captions are pulled from "comments-clean.txt". It's the original comments file, but with very basic filtering
-for some racial profanities.
+3: The captions are pulled from "comments-clean.txt". You can change this.
 
 4: To actually add things to the queue or post, use
 	
@@ -21,9 +19,3 @@ for some racial profanities.
 
 5: The stock photos are pulled from the internet, using 'unsplash's API for random images. Not sure why this API
 exists, but it's a good fit for this task.
-
-6: To check out the code for the scraper, check out 
-
-https://github.com/jbrower95/Pornhub-Comment-Scraper
-
-
