@@ -1,0 +1,29 @@
+It's a twitter bot that posts random photos with captions from Pornhub.
+
+
+1: Setup a recurring cron job to call 
+
+	`python main.py -q`, which pulls from the queue.
+
+   The queue is stored in queue/
+
+2: Make sure to put your twitter account in the code. I've made it throw an error so you remember.
+
+3: The captions are pulled from "comments-clean.txt". It's the original comments file, but with very basic filtering
+for some racial profanities.
+
+4: To actually add things to the queue or post, use
+	
+	`python main.py -i`
+
+   You'll be presented with a candidate image.
+   Type `y` to post immediately, `q` to queue, or anything else to skip. You'll be prompted to delete the photo, too.
+
+5: The stock photos are pulled from the internet, using 'unsplash's API for random images. Not sure why this API
+exists, but it's a good fit for this task.
+
+6: To check out the code for the scraper, check out 
+
+https://github.com/jbrower95/Pornhub-Comment-Scraper
+
+
